@@ -1,0 +1,17 @@
+table.mdl-data-table.mdl-js-data-table
+  thead
+    tr
+      th.mdl-data-table__cell--non-numeric Nombre
+      th.mdl-data-table__cell--non-numeric Telefono
+      th.mdl-data-table__cell--non-numeric email
+      th 
+  tbody
+    each students
+      tr
+        td.mdl-data-table__cell--non-numeric.completeName= completeName
+        td.mdl-data-table__cell--non-numeric.shortName= shortName
+        td.mdl-data-table__cell--non-numeric= profile.phoneNumber
+        td.mdl-data-table__cell--non-numeric some_email@gmail.com
+        td
+          a(href='/examen')
+            i.material-icons keyboard_arrow_right

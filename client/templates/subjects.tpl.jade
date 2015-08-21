@@ -1,0 +1,14 @@
+table.mdl-data-table.mdl-js-data-table
+  thead
+    tr
+      th.mdl-data-table__cell--non-numeric Nombre
+      th.mdl-data-table__cell--non-numeric Profesor
+      th 
+  tbody
+    each subjects
+      tr
+        td.mdl-data-table__cell--non-numeric= name
+        td.mdl-data-table__cell--non-numeric= teacher.profile.lastName
+        td
+          a(href='/examen')
+            i.material-icons keyboard_arrow_right

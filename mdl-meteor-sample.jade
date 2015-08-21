@@ -12,8 +12,8 @@ template(name="layout")
         div.mdl-layout-spacer
         div.mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
           label.mdl-button.mdl-js-button.mdl-button--icon(for="fixed-header-drawer-exp")
-            i.material-iconssearch
-          div.mdl-textfield__expandable-holde
+            i.material-icons search
+          div.mdl-textfield__expandable-holder
             input.mdl-textfield__input#fixed-header-drawer-exp(type="text" name="sample")
     div.mdl-layout__drawer
       span.mdl-layout-title Web Campus
@@ -34,41 +34,9 @@ template(name="course")
           a.mdl-tabs__tab(href="#students-panel") Alumnos
           a.mdl-tabs__tab(href="#attendances-panel") Asistencias
       div.mdl-tabs__panel.is-active#subjects-panel
-        table.mdl-data-table.mdl-js-data-table
-          thead
-            tr
-              th.mdl-data-table__cell--non-numeric Name
-              th Age
-              th ID Number
-              th 
-          tbody
-            tr
-              td.mdl-data-table__cell--non-numeric Don Aubrey
-              td 25
-              td 49021
-              td
-                i.material-icons keyboard_arrow_right
-            
-            tr
-              td.mdl-data-table__cell--non-numeric Sophia Carson
-              td 32
-              td 10258
-              td
-                i.material-icons keyboard_arrow_right
-            
-            tr
-              td.mdl-data-table__cell--non-numeric Steve Moreno
-              td 29
-              td 12359
-              td
-                a(href='/examen')
-                  i.material-icons keyboard_arrow_right
+        +subjects
       div.mdl-tabs__panel#students-panel
-        ul
-          li Tywin
-          li Cersei
-          li Jamie
-          li Tyrion
+        +students
       div.mdl-tabs__panel#attendances-panel
         ul
           li Viserys
