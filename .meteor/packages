@@ -10,3 +10,9 @@ insecure
 zodiase:mdl
 iron:router
 mquandalle:jade
+accounts-base
+accounts-password
+canotto90:meteor-google-spreadsheet@1.0.1
+alanning:roles
+anti:fake
+
