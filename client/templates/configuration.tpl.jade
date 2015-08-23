@@ -1,0 +1,12 @@
+div.mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+  div.mdl-tabs__tab-bar
+      a.mdl-tabs__tab.is-active(href="#notifications-panel")
+        div.ool Notificaciones
+        i.material-icons.oos.tab-icon announcement
+      a.mdl-tabs__tab(href="#others-panel")
+        div.ool Otros
+        i.material-icons.oos.tab-icon assignment
+  div.mdl-tabs__panel.is-active#notifications-panel
+    +notificationsConfig
+  div.mdl-tabs__panel#others-panel
+    // +notifications

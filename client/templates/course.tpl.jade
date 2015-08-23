@@ -1,0 +1,11 @@
+div.mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+  div.mdl-tabs__tab-bar
+      a.mdl-tabs__tab.is-active(href="#subjects-panel") Materias
+      a.mdl-tabs__tab(href="#students-panel") Alumnos
+      a.mdl-tabs__tab(href="#attendances-panel") Asistencias
+  div.mdl-tabs__panel.is-active#subjects-panel
+    +subjects
+  div.mdl-tabs__panel#students-panel
+    +students
+  div.mdl-tabs__panel#attendances-panel
+    +attendances_individual

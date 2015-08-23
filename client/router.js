@@ -1,9 +1,19 @@
+Router.configure({
+  layoutTemplate: 'layout'
+})
+
 Router.route('/', {
   template: 'course',
-  layoutTemplate: 'layout'
+})
+
+Router.route('/subject', {
+  template: 'subject',
 })
 
 Router.route('/examen', {
   template: 'examen',
-  layoutTemplate: 'layout'
+})
+
+Router.route('/configuration', {
+  template: 'configuration',
 })

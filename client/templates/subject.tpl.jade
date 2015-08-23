@@ -1,0 +1,17 @@
+div.mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+  div.mdl-tabs__tab-bar
+      a.mdl-tabs__tab.is-active(href="#exams-panel")
+        div.ool Examenes
+        i.material-icons.oos.tab-icon assignment
+      a.mdl-tabs__tab(href="#notifications-panel")
+        div.ool Notificaciones
+        i.material-icons.oos.tab-icon announcement
+      a.mdl-tabs__tab(href="#resources-panel")
+        div.ool Archivos
+        i.material-icons.oos.tab-icon book
+  div.mdl-tabs__panel.is-active#exams-panel
+    +exams
+  div.mdl-tabs__panel#notifications-panel
+    // +notifications
+  div.mdl-tabs__panel#resources-panel
+    // +resources

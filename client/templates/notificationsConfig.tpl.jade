@@ -1,0 +1,11 @@
+div.mdl-grid.wc-main
+  div.mdl-cell.mdl-cell--6-col.mdl-cell--12-col-phone
+    label.mdl-switch.mdl-js-switch.mdl-js-ripple-effect(for="cell-notifications-switch")
+      input.mdl-switch__input#cell-notifications-switch(type="checkbox" checked)
+      span.mdl-switch__label Notificaciones al celular
+    +commonNotificationsConfig
+  div.mdl-cell.mdl-cell--6-col.mdl-cell--12-col-phone
+    label.mdl-switch.mdl-js-switch.mdl-js-ripple-effect(for="email-notifications-switch")
+      input.mdl-switch__input#email-notifications-switch(type="checkbox" checked)
+      span.mdl-switch__label Emails
+    +commonNotificationsConfig

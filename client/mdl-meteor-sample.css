@@ -1,12 +1,13 @@
 /* CSS declarations go here */
-table {
+.wc-main {
   width: 100%;
 }
+
 @media (min-width: 1000px) {
   .shortName {
     display: none
   }
-  table {
+  .wc-main {
     width: 70%;
     margin-left: 15%;
   }
@@ -18,7 +19,20 @@ table {
 }
 
 @media (max-width: 999px) {
-  .only-on-large {
+  /* only-on-large */
+  .ool {
     display: none
   }
+}
+
+@media (min-width: 1000) {
+  /* only-on-small */
+  .oos {
+    display: none
+  }
+}
+
+.tab-icon {
+  line-height: inherit;
+  font-size: 250%;
 }

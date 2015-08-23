@@ -1,0 +1,16 @@
+table.mdl-data-table.mdl-js-data-table.wc-main
+  thead
+    tr
+      th.mdl-data-table__cell--non-numeric Titulo
+      th.mdl-data-table__cell--non-numeric.ool Fecha
+      th.mdl-data-table__cell Nota
+      th 
+  tbody
+    each exams
+      tr
+        td.mdl-data-table__cell--non-numeric= title
+        td.mdl-data-table__cell--non-numeric.ool {{formatDate date}}
+        td.mdl-data-table__cell= score
+        td
+          a(href='/examen')
+            i.material-icons keyboard_arrow_right
