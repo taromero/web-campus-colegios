@@ -6,6 +6,7 @@ template(name="layout")
   div.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
     header.mdl-layout__header
       div.mdl-layout__header-row
+        // div.mdl-spinner.mdl-js-spinner.is-active
         span.mdl-layout-title
           a(onclick='window.history.back()' style='color:white')
             i.material-icons.mdl-navigation__link arrow_back
@@ -17,6 +18,7 @@ template(name="layout")
             input.mdl-textfield__input#fixed-header-drawer-exp(type="text" name="sample")
     div.mdl-layout__drawer
       span.mdl-layout-title Web Campus
+      +notifications
       nav.mdl-navigation
         a.mdl-navigation__link Home
         a.mdl-navigation__link Asistencias
@@ -25,6 +27,17 @@ template(name="layout")
     main.mdl-layout__content
       div.page-content
         +yield
+
+template(name='notifications')
+  label.mdl-switch.mdl-js-switch.mdl-js-ripple-effect(for="switch-1")
+    input.mdl-switch__input#switch-1(type="checkbox" checked)
+    span.mdl-switch__label Push Notifications
+  label.mdl-switch.mdl-js-switch.mdl-js-ripple-effect(for="switch-2")
+    input.mdl-switch__input#switch-2(type="checkbox" checked)
+    span.mdl-switch__label Emails
+  label.mdl-switch.mdl-js-switch.mdl-js-ripple-effect(for="switch-3")
+    input.mdl-switch__input#switch-3(type="checkbox" checked)
+    span.mdl-switch__label Whatsapp
 
 template(name="course")
   div.transitions-content
@@ -38,9 +51,7 @@ template(name="course")
       div.mdl-tabs__panel#students-panel
         +students
       div.mdl-tabs__panel#attendances-panel
-        ul
-          li Viserys
-          li Daenerys
+        +attendances_individual
 
 template(name='examen')
   div.transitions-content
