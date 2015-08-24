@@ -6,23 +6,10 @@ div.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
   header.mdl-layout__header
     div.mdl-layout__header-row
       // div.mdl-spinner.mdl-js-spinner.is-active
-      span.mdl-layout-title
-        a(onclick='window.history.back()' style='color:white')
-          i.material-icons.mdl-navigation__link arrow_back
+      +backButton
       div.mdl-layout-spacer
-      div.mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
-        label.mdl-button.mdl-js-button.mdl-button--icon(for="fixed-header-drawer-exp")
-          i.material-icons search
-        div.mdl-textfield__expandable-holder
-          input.mdl-textfield__input#fixed-header-drawer-exp(type="text" name="sample")
-  div.mdl-layout__drawer
-    span.mdl-layout-title Web Campus
-    nav.mdl-navigation
-      a.mdl-navigation__link Home
-      a.mdl-navigation__link(href='/configuration') Configuracion
-      a.mdl-navigation__link Asistencias
-      a.mdl-navigation__link Boletin
-      a.mdl-navigation__link Salir
+      +search
+  +sideMenu
   main.mdl-layout__content
     div.page-content
       +yield

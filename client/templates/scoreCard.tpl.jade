@@ -1,0 +1,34 @@
+table.mdl-data-table.mdl-js-data-table.wc-main
+  thead
+    tr
+      th.mdl-data-table__cell--non-numeric Materia
+      th.mdl-data-table__cell--non-numeric 1er
+      th.mdl-data-table__cell--non-numeric 2ndo
+      th.mdl-data-table__cell--non-numeric 3er
+      th.mdl-data-table__cell--non-numeric Integradora
+      th.mdl-data-table__cell--non-numeric Final
+  tbody
+    each subjects
+      tr
+        td.mdl-data-table__cell--non-numeric= name
+        td.mdl-data-table__cell--non-numeric#tt1 #{randomScore}
+          div.mdl-tooltip(for='tt1')
+            {{randomScore}}
+            br
+            {{randomScore}}
+            br
+            {{randomScore}}
+            br
+            {{randomScore}}
+        td.mdl-data-table__cell--non-numeric#tt2 #{randomScore}
+          div.mdl-tooltip(for='tt2')
+            {{randomScore}}
+            br
+            {{randomScore}}
+            br
+            {{randomScore}}
+            br
+            {{randomScore}}
+        td.mdl-data-table__cell--non-numeric #{randomScore}
+        td.mdl-data-table__cell--non-numeric #{randomScore}
+        td.mdl-data-table__cell--non-numeric #{randomScore}

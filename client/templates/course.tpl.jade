@@ -1,8 +1,14 @@
 div.mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
   div.mdl-tabs__tab-bar
-      a.mdl-tabs__tab.is-active(href="#subjects-panel") Materias
-      a.mdl-tabs__tab(href="#students-panel") Alumnos
-      a.mdl-tabs__tab(href="#attendances-panel") Asistencias
+      a.mdl-tabs__tab.is-active(href='#subjects-panel')
+        div.ool Materias
+        i.material-icons.oos.tab-icon account_balance
+      a.mdl-tabs__tab(href='#students-panel')
+        div.ool Alumnos
+        i.material-icons.oos.tab-icon person
+      a.mdl-tabs__tab(href='#attendances-panel')
+        div.ool Asistencias
+        i.material-icons.oos.tab-icon done_all
   div.mdl-tabs__panel.is-active#subjects-panel
     +subjects
   div.mdl-tabs__panel#students-panel

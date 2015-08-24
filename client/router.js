@@ -6,14 +6,22 @@ Router.route('/', {
   template: 'course',
 })
 
-Router.route('/subject', {
+Router.route('/materia', {
   template: 'subject',
 })
 
 Router.route('/examen', {
-  template: 'examen',
+  template: 'exam',
 })
 
-Router.route('/configuration', {
+Router.route('/configuracion', {
   template: 'configuration',
+})
+
+Router.route('/asistencias', {
+  template: 'attendances_individual'
+})
+
+Router.route('/boletin', {
+  template: 'scoreCard'
 })
