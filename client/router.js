@@ -25,3 +25,7 @@ Router.route('/asistencias', {
 Router.route('/boletin', {
   template: 'scoreCard'
 })
+
+Router.route('/login', {
+  template: 'login'
+})
