@@ -1,0 +1,16 @@
+div(style="text-align:center")
+  div(style="clear:both")
+    iframe#pdf_preview(style='display:none;width:100%;height:30em' frameborder="0" scrolling="no")
+      button#create_resource.waves-effect.waves-light.btn.separate(style='display:none')
+        i.mdi-file-file-upload.left
+          | Subir
+  div#image_preview_container.card(style='display:none')
+    div.card-image
+      img#image_preview
+  div.card-action.valign-wrapper(style='margin:5%')
+    button#create_resource.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored
+      i.material-icons file_upload
+      | Subir
+    button#create_resource.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
+      i.material-icons clear
+      | Cancelar

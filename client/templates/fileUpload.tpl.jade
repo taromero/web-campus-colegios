@@ -1,0 +1,13 @@
+div.container
+  +progressBar
+  div
+    div
+      div
+        button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent#select_file(style='width:100%')
+          span Seleccionar
+        input.file_input(type="file", style='display:none')
+    div.showOnSelectedFile(style='display:none')
+      div
+        div.mdl-typography--display-1-color-contrast(style='font-size:inherit;line-height:inherit')= file_name
+  div.row.previewRow.showOnSelectedFile(style='display:none')
+    +uploadPreview
