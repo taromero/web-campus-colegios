@@ -42,3 +42,11 @@ Router.route('/subida', {
 Router.route('/cursos', {
   template: 'courses'
 })
+
+Router.route('/nueva-notificacion', {
+  template: 'createNotification'
+})
+
+Router.route('/nuevo-examen', {
+  template: 'createExam'
+})
