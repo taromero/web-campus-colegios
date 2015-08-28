@@ -32,7 +32,7 @@ Template.fileUpload.events({
     });
   },
   'click #cancel_upload': function(event) {
-    uploader.xhr.abort()
+    uploader.xh && ruploader.xhr.abort()
     Session.set('file_name', null)
     var $base = $(event.currentTarget).closest('.container')
     $base.find('.showOnSelectedFile').hide()
