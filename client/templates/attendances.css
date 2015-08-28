@@ -1,0 +1,47 @@
+#o4.is-checked .mdl-radio__outer-circle {
+  border: 2px solid green;
+}
+
+#o4 .mdl-radio__inner-circle {
+  background: green;
+}
+
+#o4 .mdl-ripple {
+  background: green;
+}
+
+#o3.is-checked .mdl-radio__outer-circle {
+  border: 2px solid teal;
+}
+
+#o3 .mdl-radio__inner-circle {
+  background: teal;
+}
+
+#o3 .mdl-ripple {
+  background: teal;
+}
+
+#o2.is-checked .mdl-radio__outer-circle {
+  border: 2px solid darkorange;
+}
+
+#o2 .mdl-radio__inner-circle {
+  background: darkorange;
+}
+
+#o2 .mdl-ripple {
+  background: darkorange;
+}
+
+#o1.is-checked .mdl-radio__outer-circle {
+  border: 2px solid lightcoral;
+}
+
+#o1 .mdl-radio__inner-circle {
+  background: lightcoral;
+}
+
+#o1 .mdl-ripple {
+  background: lightcoral;
+}

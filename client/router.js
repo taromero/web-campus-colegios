@@ -2,7 +2,12 @@ Router.configure({
   layoutTemplate: 'layout'
 })
 
-Router.route('/', {
+
+Router.route('/', function() {
+  this.redirect('/curso')
+})
+
+Router.route('/curso', {
   template: 'course',
 })
 
@@ -32,4 +37,8 @@ Router.route('/login', {
 
 Router.route('/subida', {
   template: 'fileUpload'
+})
+
+Router.route('/cursos', {
+  template: 'courses'
 })

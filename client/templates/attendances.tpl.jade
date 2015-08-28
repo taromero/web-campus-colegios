@@ -1,0 +1,23 @@
+table.mdl-data-table.mdl-js-data-table.wc-main
+  thead
+    tr
+      th.mdl-data-table__cell--non-numeric.ool Asistencia
+      th.mdl-data-table__cell--non-numeric Nombre
+  tbody
+    each students
+      tr
+        td.mdl-data-table__cell--non-numeric.completeName= completeName
+        td.mdl-data-table__cell--non-numeric.shortName= shortName
+        td.mdl-data-table__cell--non-numeric
+          label#o1.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="o1-{{_id}}")
+            input.mdl-radio__button(type="radio" name="options-{{_id}}" value="1" id="o1-{{_id}}")
+            span.mdl-radio__label 0
+          label#o2.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="o2-{{_id}}")
+            input.mdl-radio__button(name="options-{{_id}}" value="2" id="o2-{{_id}}" type="radio")
+            span.mdl-radio__label 1/2
+          label#o3.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="o3-{{_id}}")
+            input.mdl-radio__button(type="radio" name="options-{{_id}}" value="1" id="o3-{{_id}}")
+            span.mdl-radio__label 3/4
+          label#o4.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="04-{{_id}}")
+            input.mdl-radio__button(name="options-{{_id}}" value="2" id="o4-{{_id}}" type="radio" checked)
+            span.mdl-radio__label 1

@@ -1,0 +1,14 @@
+table.mdl-data-table.mdl-js-data-table.wc-main
+  thead
+    tr
+      th.mdl-data-table__cell--non-numeric Curso
+      th.mdl-data-table__cell--non-numeric Preceptor
+      th 
+  tbody
+    each courses
+      tr
+        td.mdl-data-table__cell--non-numeric= name
+        td.mdl-data-table__cell--non-numeric Simon Rodriguez
+        td
+          a(href='/curso')
+            i.material-icons keyboard_arrow_right

@@ -14,4 +14,7 @@ div.mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
   div.mdl-tabs__panel#students-panel
     +students
   div.mdl-tabs__panel#attendances-panel
-    +attendances_individual
+    if isDirective
+      +attendances
+    else
+      +attendances_individual
