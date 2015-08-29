@@ -50,3 +50,7 @@ Router.route('/nueva-notificacion', {
 Router.route('/nuevo-examen', {
   template: 'createExam'
 })
+
+Router.route('/estudiante', {
+  template: 'student'
+})
