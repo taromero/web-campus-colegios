@@ -29,3 +29,7 @@ Router.route('/boletin', {
 Router.route('/login', {
   template: 'login'
 })
+
+Router.route('/recupero', {
+  template: 'recover'
+})
