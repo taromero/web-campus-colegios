@@ -1,5 +1,5 @@
 Template.exam.helpers({
-  exam: function() {
+  exam: function () {
     return Exams.findOne()
   }
 })

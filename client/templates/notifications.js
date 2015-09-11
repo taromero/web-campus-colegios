@@ -1,5 +1,5 @@
 Template.notifications.helpers({
-  notifications: function() {
+  notifications: function () {
     return [
       { title: 'Llegada tarde', medium: 'whatsapp', date: Date.now() },
       { title: 'Examen desaprobado', medium: 'email', date: Date.now() },

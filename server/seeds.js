@@ -1,5 +1,5 @@
-Seed = {
-  all: function() {
+global.Seed = {
+  all: function () {
     var creds = {
       client_email: Meteor.settings.spreadsheet.client_email,
       private_key: Meteor.settings.spreadsheet.private_key
@@ -10,14 +10,14 @@ Seed = {
     createStudents()
     createAdmin('directive')
 
-    function createAdmin(role) {
+    function createAdmin (role) {
       console.log('Seeding', role)
       var directives_sheet = new GoogleSpreadsheet(Meteor.settings.spreadsheet[role + 's_file_id'])
       directives_sheet.useServiceAccountAuth(creds)
       var directive_rows = directives_sheet.getRows(1)
       directive_rows.forEach(createDirective)
 
-      function createDirective(row) {
+      function createDirective (row) {
         var user_id = Accounts.createUser({
           email: row.email,
           password: row.dni
@@ -32,9 +32,9 @@ Seed = {
       }
     }
 
-    function createStudents() {
+    function createStudents () {
       console.log('Seeding students')
-      Meteor.settings.spreadsheet.student_files.forEach(function(student_file_id) {
+      Meteor.settings.spreadsheet.student_files.forEach(function (student_file_id) {
         var students_sheet = new GoogleSpreadsheet(student_file_id)
         students_sheet.useServiceAccountAuth(creds)
 
@@ -44,7 +44,7 @@ Seed = {
         var rows = students_sheet.getRows(1)
         rows.forEach(createStudent)
 
-        function createStudent(row) {
+        function createStudent (row) {
           var user_id = Accounts.createUser({
             email: row.email,
             password: row.dni
@@ -61,9 +61,9 @@ Seed = {
       })
     }
 
-    function createSubjects() {
+    function createSubjects () {
       console.log('Seeding subjects')
-      Meteor.settings.spreadsheet.subject_files.forEach(function(subject_file_id) {
+      Meteor.settings.spreadsheet.subject_files.forEach(function (subject_file_id) {
         var subject_sheet = new GoogleSpreadsheet(subject_file_id)
         subject_sheet.useServiceAccountAuth(creds)
 
@@ -74,12 +74,11 @@ Seed = {
         var rows = subject_sheet.getRows(1)
         rows.forEach(createSubject)
 
-
-        function createSubject(row) {
-          if (row.nombre != '\n') {
+        function createSubject (row) {
+          if (row.nombre !== '\n') {
             Subjects.insert({
               name: row.nombre,
-              description: (row.descripcion != '\n' && row.descripcion) || Fake.paragraph(10),
+              description: (row.descripcion !== '\n' && row.descripcion) || Fake.paragraph(10),
               course_id: course_id,
               teacher_id: Meteor.users.findOne({ emails: { $elemMatch: { address: row.profesor } } })._id
             })
@@ -88,13 +87,13 @@ Seed = {
       })
     }
   },
-  create: function(number) {
+  create: function (number) {
     var range = Array.apply(null, { length: number }).map(Number.call, Number)
     return {
-      exams: function(subject_id) {
+      exams: function (subject_id) {
         range.forEach(Exams.iterableSample(subject_id))
       },
-      examScores: function(student_id, exam_id) {
+      examScores: function (student_id, exam_id) {
         range.forEach(ExamScores.iterableSample(student_id, exam_id))
       }
     }

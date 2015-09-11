@@ -1,5 +1,5 @@
 Template.courses.helpers({
-  courses: function() {
+  courses: function () {
     return Courses.find()
   }
 })

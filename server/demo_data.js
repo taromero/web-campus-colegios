@@ -1,4 +1,4 @@
-DemoData = {
+global.DemoData = {
   Exams: {
     titles: [
       'Llanura Pampeana',
@@ -16,5 +16,5 @@ DemoData = {
       'Filosofos Griegos',
       'Armonia I'
     ]
-  },
+  }
 }

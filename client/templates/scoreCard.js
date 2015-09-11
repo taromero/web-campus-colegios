@@ -1,8 +1,8 @@
 Template.scoreCard.helpers({
-  subjects: function() {
+  subjects: function () {
     return Subjects.find()
   },
-  randomScore: function() {
+  randomScore: function () {
     return Math.floor((Math.random() * 6) + 5)
   }
 })

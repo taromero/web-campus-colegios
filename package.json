@@ -1,0 +1,11 @@
+{
+  "standard": {
+    "global": [
+      "Mongo", "Meteor",
+      "Seed", "GoogleSpreadsheet", "Accounts", "Roles", "Courses", "Subjects",
+      "Fake", "ExamScores", "Exams", "Slingshot", "DemoData", "Template", "$",
+      "Session", "URL", "FileReader", "role", "uploader", "swal", "Router",
+      "ReactiveVar", "moment"
+    ]
+  }
+}

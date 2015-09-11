@@ -2,25 +2,24 @@ Router.configure({
   layoutTemplate: 'layout'
 })
 
-
-Router.route('/', function() {
+Router.route('/', function () {
   this.redirect('/curso')
 })
 
 Router.route('/curso', {
-  template: 'course',
+  template: 'course'
 })
 
 Router.route('/materia', {
-  template: 'subject',
+  template: 'subject'
 })
 
 Router.route('/examen', {
-  template: 'exam',
+  template: 'exam'
 })
 
 Router.route('/configuracion', {
-  template: 'configuration',
+  template: 'configuration'
 })
 
 Router.route('/asistencias', {
