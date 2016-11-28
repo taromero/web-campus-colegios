@@ -8,13 +8,13 @@ table.mdl-data-table.mdl-js-data-table.wc-main
       th.mdl-data-table__cell--non-numeric Asistencia
       th
         .mdl-data-table__cell--non-numeric.ool Presente
-        i.material-icons.oos.tab-icon check_circle
+        i.material-icons.oos.tab-icon.oos check_circle
       th
         .mdl-data-table__cell--non-numeric.ool Media Falta
-        i.material-icons.oos.tab-icon  warning
+        i.material-icons.oos.tab-icon.oos  warning
       th
         .mdl-data-table__cell--non-numeric.ool Ausente
-        i.material-icons.oos.tab-icon  not_interested
+        i.material-icons.oos.tab-icon.oos  not_interested
   tbody
     each students
       tr
@@ -23,9 +23,13 @@ table.mdl-data-table.mdl-js-data-table.wc-main
         td.mdl-data-table__cell--non-numeric
           label#o3.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="o1-{{_id}}")
             input.mdl-radio__button(type="radio" name="options-{{_id}}" value="1" id="o1-{{_id}}")
+            span.mdl-radio__label &nbsp;
+
         td.mdl-data-table__cell--non-numeric
           label#o2.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="o2-{{_id}}")
             input.mdl-radio__button(type="radio" name="options-{{_id}}" value="2" id="o2-{{_id}}")
+            span.mdl-radio__label &nbsp;
         td.mdl-data-table__cell--non-numeric
           label#o1.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for="03-{{_id}}")
             input.mdl-radio__button(type="radio" name="options-{{_id}}" value="3" id="o3-{{_id}}")
+            span.mdl-radio__label &nbsp;

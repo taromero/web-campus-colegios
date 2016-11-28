@@ -22,14 +22,14 @@
 @media (max-width: 999px) {
   /* only-on-large */
   .ool {
-    display: none
+    display: none !important;
   }
 }
 
 @media (min-width: 1000px) {
   /* only-on-small */
   .oos {
-    display: none
+    display: none !important;
   }
 }
 
