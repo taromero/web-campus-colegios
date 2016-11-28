@@ -11,4 +11,5 @@ script:
 - snazzy
 deploy:
   provider: heroku
-  api_key: $AK
+  api_key:
+    secure: $AK
