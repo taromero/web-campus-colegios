@@ -1,11 +1,34 @@
 {
   "standard": {
     "global": [
-      "Mongo", "Meteor",
-      "Seed", "GoogleSpreadsheet", "Accounts", "Roles", "Courses", "Subjects",
-      "Fake", "ExamScores", "Exams", "Slingshot", "DemoData", "Template", "$",
-      "Session", "URL", "FileReader", "role", "uploader", "swal", "Router",
-      "ReactiveVar", "moment"
+      "Mongo",
+      "Meteor",
+      "Seed",
+      "GoogleSpreadsheet",
+      "Accounts",
+      "Roles",
+      "Courses",
+      "Subjects",
+      "Fake",
+      "ExamScores",
+      "Exams",
+      "Slingshot",
+      "DemoData",
+      "Template",
+      "$",
+      "Session",
+      "URL",
+      "FileReader",
+      "role",
+      "uploader",
+      "swal",
+      "Router",
+      "ReactiveVar",
+      "moment"
     ]
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "bcrypt": "^0.8.7"
   }
 }
